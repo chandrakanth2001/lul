@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ckx home</title>
+    <link rel="icon" href="Screenshot 2023-09-05 191339.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+         background-color: rgb(243, 239, 239);
+
+
+        }
+
+
+        #frstsquare {
+            width: 1920px;
+            height: 600px;
+            background-color: rgb(3, 26, 68);
+            border-radius: 0 0 5% 5%;
+            overflow-x: hidden;
+            
+        }
+
+        .navigation {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        .navigation li {
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            margin-right: 20px;
+            display: inline;
+        }
+
+        #ckx {
+            font-weight: bolder;
+            color: white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            position: relative;
+            left: 50px;
+            top: 20px;
+        }
+
+        #first {
+            color: white;
+            position: relative;
+            top: 100px;
+            left: 60px;
+        }
+
+        #big {
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            position: relative;
+            top: 200px;
+            left: 60px;
+        }
+
+        #para {
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+            position: relative;
+            top: 200px;
+            left: 60px;
+        }
+
+        #searchbox {
+            position: absolute;
+            left: 60px;
+            top: 350px;
+            display: flex;
+            align-items: center;
+        }
+
+        #searchbox input[type="text"] {
+            width: 300px;
+            height: 39px;
+            border-radius: 20px;
+            margin-right: 10px;
+            border: 0;
+            
+        }
+        #sh {
+            background-color: rgba(218, 38, 6, 0.952);
+            width: 120px;
+            height: 30px;
+            padding: 5px;
+            border-radius: 20px;
+            color: white;
+            position: relative;
+            left: -40px;  
+            border: 0;
+            cursor: pointer;
+            transition: filter 0.3s ;
+        }
+        #sh:hover{
+            filter: brightness(1.3);
+            
+        }
+        span{
+            position:relative ;
+            left: 20px;
+            top: 5px;
+        }
+        #gta{
+            position:absolute;
+            right: 200px;
+            top: 120px;
+        }
+        #gtatext{
+            position:relative ;
+            top: -3px;
+            right:-1px;
+            color: white;
+            font-weight: bolder;
+            background-color: red;
+            height: 30px;
+            width: 90px;
+            border-radius: 0 10px 0 10px;
+            display: flex;
+            font-size: 20px;
+
+        }
+        #fsquare{
+        display: flex;
+        width: 200px;
+        height: 150px;
+        background-color: rgb(250, 250, 250);
+        color: rgb(10, 1, 1);
+        justify-content: center;
+        position: absolute;
+        top:60%;
+        left:10%;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px rgb(85, 85, 85);
+        transition: box-shadow 0.3s;
+        
+    }
+    #fsquare:hover{
+        box-shadow: 6px 6px 10px rgb(6, 24, 73);
+    }
+    
+    
+    #ssquare{
+        display: flex;
+        width: 200px;
+        height: 150px;
+        background-color: rgb(255, 253, 253);
+        color: rgb(0, 0, 0);
+        justify-content: center;
+        position: absolute;
+        top:60%;
+        left:30%;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px rgb(85, 85, 85);
+        transition: box-shadow 0.3s;
+    }
+    #ssquare:hover{
+        box-shadow: 6px 6px 10px rgb(6, 24, 73);
+    }
+    #tsquare{
+        display: flex;
+        width: 200px;
+        height: 150px;
+        background-color: rgb(248, 245, 245);
+        color: rgb(7, 1, 1);
+        justify-content: center;
+        position: absolute;
+        top:60%;
+        left:50%;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px rgb(85, 85, 85);
+        transition: box-shadow 0.3s;
+    }
+    #tsquare:hover {
+        box-shadow: 6px 6px 10px rgb(6, 24, 73);
+    }
+    #fosquare{
+        display: flex;
+        width: 200px;
+        height: 150px;
+        background-color: rgb(250, 244, 244);
+        color: rgb(0, 0, 0);
+        justify-content: center;
+        position: absolute;
+        top:60%;
+        left:70%;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px rgb(85, 85, 85);
+        transition: box-shadow 0.3s;
+    }
+    .po{
+        cursor: pointer;
+    }
+    #fosquare:hover {
+        box-shadow: 6px 6px 10px rgb(6, 24, 73);
+    }
+    .inside{
+        text-indent: 30px;
+    }
+    .inside:focus{
+        outline: none;
+    }
+    #TG{
+        position: absolute;
+        left: 200px;
+        top:800px
+    }
+    #view{
+        background-color: red;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        width: 100px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        right: 350px;
+        top: 800px;
+        border-radius: 10px;
+        justify-content: center;
+        transition: filter 125ms, color 0.3s ease-in-out;
+        cursor: pointer;
+    }
+    #view:hover{
+       color: rgb(0, 0, 0);
+        filter: brightness(1.2);
+    }
+    img#assas{
+        position: absolute;
+        top: 900px;
+        left: 200px;
+        transition: filter 125ms;
+
+    }
+    img#assas:hover{
+        
+        filter: brightness(1.2);
+    }
+    img#assas{
+        border-radius: 10px;
+    }
+    #fg{
+        position: absolute;
+        top: 900px;
+        left: 570px;
+        transition: filter 125ms;
+    }
+    img#fg:hover {
+    
+    filter:brightness(1.1) ;}
+    
+    img#fg{
+        border-radius: 10px;
+    }
+    #fort{
+        position: absolute;
+        top: 900px;
+        right: 350px;
+        transition: filter 125ms;
+    }
+    img#fort:hover{
+        filter: brightness(1.2);
+    }
+    img#fort{
+        border-radius: 10px; 
+    }
+    #pubg{
+        position: absolute;
+        top: 900px;
+        right: 740px;
+        transition: filter 125ms;
+    }
+    img#pubg:hover{
+        filter: brightness(1.2);
+    }
+    img#pubg{
+        border-radius: 10px; 
+    }
+    #games{
+        cursor: pointer;
+    }
+    .box{
+        color:black;
+        position: absolute;
+        align-content: center;
+        top: 50px;
+    }
+    .t3rd{
+        width: 200px;
+        height: 55px;  
+        background-color: rgba(114, 114, 114, 0.507); 
+        position: absolute;
+        left: 200px;
+        top: 1052px;
+        border-radius: 0 0 10px 10px;
+        display: flex;
+        align-items:baseline;
+        justify-content: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     }
+     #s2nd{
+        position: absolute;
+        left: 570px;
+     }
+     #t3d{
+        position: absolute;
+        left: 963px;
+     }
+     #frd{
+        position: absolute;
+        left: 1355px;
+        
+     }
+    #bigs{
+        width: 1700px;
+        height:500px;
+        background-color:rgba(196, 196, 209, 0.822);
+        position: absolute;
+        left: 90px;
+        top:1250px;
+        border-radius: 100px;
+    }
+    #top{
+        color: red;
+        position: absolute;
+        left: 150px;
+        top: 60px;
+        font-weight: bold;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    #most{
+        font-weight:bold;
+        position: absolute;
+        left: 150px;
+        top: 90px;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    #view2{
+        
+        background-color: red;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        width: 100px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        right: 190px;
+        top: 90px;
+        border-radius: 10px;
+        justify-content: center;
+        cursor: pointer;
+        transition: filter 125ms,color 0.3s;
+    }
+    #view2:hover {
+        color:black;
+        filter: brightness(1.2);
+    }
+    .s2ndg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    cursor: pointer;
+        
+    }
+    #gen{
+        transition: box-shadow 0.3s ease-in-out;
+    }
+    img#gen:hover{
+        box-shadow: 2px 2px 20px rgba(2, 36, 128, 0.932) ;
+    }
+    .s2ndg img{
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px rgb(85, 85, 85);
+    }
+    .lis{
+        position: absolute;
+        top: 415px;
+        display: flex;
+        list-style-type: none;
+    }
+    .lis li{
+        
+        margin-left: 150px;
+    }
+    .adv{
+        font-size: 20px;
+        color: rgb(97, 93, 93);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        
+    }
+    .exp{
+       width: 100px;
+       height: 30px;
+       background-color: red;
+       color: white;
+       font-weight: bold;
+       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       border-radius: 20px;
+       cursor: pointer;
+       transition: color 0.3s;
+    }
+    .exp:hover{
+        color: black;
+    }
+    .ttrd{
+        width: 1600px;
+        height: 400px;
+        background-color: rgb(255, 255, 255);
+        position: absolute;
+        top: 1950px;
+        left: 100px;
+        display: flex;
+        justify-content: center;
+        border-radius: 50px;
+        
+      
+    }
+    #thrdh{
+    
+        font-weight: bolder;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 30px;
+        position: absolute;
+        top: 10px;
+        left: 44%;
+        text-decoration: underline;
+    }
+    .theen{
+        display: flex;
+        position: relative;
+        top: 100px;
+        right: 2px;
+        display: flex;
+        margin: 10px;
+        cursor: pointer;
+        box-shadow:2px 2px 20px rgba(14, 13, 13, 0.932) ; 
+        transition:box-shadow 125ms,filter 0.3s;
+    }
+    .theen:hover{
+        filter: brightness(1.3);
+        box-shadow: 5px 5px 20px rgb(189, 45, 9); 
+    }
+        img.theen{
+            border-radius: 10px;
+        }
+
+        #fsq{
+                width: 400px;height: 500px;
+                background-color: rgb(204, 198, 198);
+                position: relative;
+                top: 1500px;
+                left: 250px;
+                border-radius: 50px;
+        }
+        #shp{
+            color: red;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            position: relative;
+            top: 80px;
+            left: 30px;
+        }
+        #pre{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: bolder;
+            position: relative;
+            left: 30px;
+            top: 100px;
+        }
+        .blue{
+            color: blue;
+        }
+        #lo{
+            position: absolute;top:250px;
+            left: 30px;
+
+        }
+        #shopnow{
+            width: 160px;
+            height: 50px;
+            border-radius: 50px;
+            background-color: red;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            color: white;
+            position: relative;
+            left: 30px;
+            top: 300px;
+            cursor: pointer;
+            transition: filter 125ms,color 0.3s;
+        }
+        #shopnow:hover {
+            filter: brightness(1.2);
+            color: black;
+        }
+        #lastpic{
+            position: relative;
+            top: 1950px;
+            left: 600px;
+        }
+        img#lastpic{
+        border-radius: 50px;
+        }   
+        
+        #scndsq{
+            width: 500px;
+            height: 300px;
+            background-color: rgb(204, 198, 198);
+            position: relative;
+            top: 1200px;
+            left: 1000px;
+            border-radius: 50px;
+        }
+        #lsbox{
+           
+            width: 300px;
+            height: 39px;
+            border-radius: 20px;
+            margin-right: 10px;
+            border: 0;
+            position: relative;
+            top: 120px;
+            left: 60px;
+        }
+        .in{
+            text-indent: 10px;
+        }
+        .in:focus{
+            outline: none;
+        }
+        #newsl{
+            color: red;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: bolder;
+            position: relative;
+            top: 50px;
+            left: 60px;
+        }
+        #ge{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 30px;
+            position: relative;
+            left: 60px;
+            top: 75px;
+        }
+        #lsub{
+            position: relative;
+            top: 80px;
+            left: 250px;
+            width: 160px;
+            height: 40px;
+            border-radius: 50px;
+            background-color: red;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            color: white;
+            cursor:pointer;
+            transition: filter 125ms,color 0.3s;
+        }
+        #lsub:hover {
+                filter: brightness(1.2);
+                color: black;
+        }
+
+        #lastdiv{
+            position: relative;
+            width: 1920px;
+            height: 80px;
+            top: 1400px;
+            background-color:darkblue;
+        }
+        #ck{
+            color: white;
+            display: flex;
+            justify-content: center;
+        }
+    
+    
+   
+   
+       
+
+    </style>
+</head>
+<body>
+    
+    <div id="frstsquare">
+        
+        <div id="ckx">
+            <h2>LUL</h2>
+        </div>
+        <div id="big">
+            <h1>BEST ONLINE GAMING SITE EVER !</h1>
+        </div>
+        <div>
+            <h2 id="first">Welcome to LevelUpLounge</h2>
+        </div>
+        <div id="para">
+            <p>Gaming sites provide a virtual playground for gamers of all ages, offering a vast array of online and downloadable games across various genres. <br> They often feature reviews, news, and forums that foster a thriving gaming community, allowing enthusiasts to connect, share tips, and stay updated on the latest gaming trends.</p>
+        </div>
+        <div id="searchbox">
+            <input type="text" class="inside" placeholder="Type something" >
+            <div id="sh"><span>Search here</span></div>
+        </div>
+       <div id="gta"><img src="GTAOnline.jpg" alt="" width="250" height="300" > <label for="gta" id="gtatext">&nbsp;&nbsp;&nbsp;&nbsp;Free!</label></div>
+        <ol class="navigation">
+            <li> Home</li>
+            <li>Shop</li>
+            <li>Products</li>
+            <li>Contact Us</li>
+        </ol>
+    </div>
+    <div class="po">
+
+    <div id="fsquare" ><label for="" class="box">&#9729; <br>FREE STORAGE</label></div>
+    <div id="ssquare" ><label for="" class="box">&#128100;<br> USER MODE</label></div>
+    <div id="tsquare" ><label for="" class="box">&#8634; <br>REPLY</label></div>
+    <div id="fosquare"><label for="" class="box">&#9733; <br>EASY LAYOUT</label></div>
+
+    </div>
+    <div><h2 id="TG">Trending Games</h2></div>
+    <div><h3 id="view">View all</h3></div>
+
+        <div id="games">
+
+        <img id="assas" src="capsule_616x353.jpg" width="200" height="150">
+        <img id="fg" src="EGS_FallGuys_Mediatonic_S1_2560x1440-56c5a3288eeee8e5c1de3932894eca53.jpeg" alt="" width="200" height="150">
+        <img id="fort" src="social-image-chapter4-s3-3840x2160-d35912cc25ad.jpg"  width="200" height="150"><img id="pubg" src="img-og-pubg.jpg" alt="" width="200" height="150">
+        <div class="t3rd" id="frd">Action<br>Fortnite</div>
+        <div class="t3rd">Action<br>Assassin's Creed</div>
+        <div class="t3rd" id="s2nd">Fun <br>Fall Guyz</div>
+        <div class="t3rd" id="t3d">Action<br>PUBG</div>
+
+        </div>
+
+
+
+
+
+
+    <div id="bigs">
+        <h4 id="top">TOP GAMES</h4>
+        <h1 id="most">MOST PLAYED</h1>
+        <div id="view2"><h4>View all</h4></div>
+
+        <div class="s2ndg">   
+            <div class="image-container">
+                <img id="gen" src="maxresdefault.jpg" alt="" width="250" height="200" style="margin-right: 10px;">
+                <p class="adv">Adventure</p><br>
+                <h3>Genshin Impact</h3>
+                <div class="exp">Explore</div>
+            </div>
+
+            <div class="image-container">
+                <img id="gen" src="wows_social_1.jpg" alt="" width="250" height="200" style="margin-right: 10px;">
+                <p class="adv">Adventure</p><br>
+                <h3>Genshin Impact</h3>
+                <div class="exp">Explore</div>
+            </div>
+            <div class="image-container">
+                <img id="gen" src="capsule_616x353 (1).jpg" alt="" width="250" height="200" style="margin-right: 10px;">
+                <p class="adv">Adventure</p><br>
+                <h3>Genshin Impact</h3>
+                <div class="exp">Explore</div>
+            </div>
+            <div class="image-container">
+                <img id="gen" src="H2x1_NSwitchDS_RocketLeague_image1600w.jpg" alt="" width="250" height="200" style="margin-right: 10px;">
+                <p class="adv">Adventure</p><br>
+                <h3>Genshin Impact</h3>
+                <div class="exp">Explore</div>
+            </div>
+            <div class="image-container">
+                <img id="gen" src="valorant-listing-800x450.jpg" alt="" width="250" height="200" style="margin-right: 10px;">
+                <p class="adv">Adventure</p><br>
+                <h3>Genshin Impact</h3>
+                <div class="exp">Explore</div>
+            </div>
+            <div class="image-container">
+                <img id="gen" src="ax0V5TYMax06mLzmkWeQMiwH.webp" alt="" width="250" height="200" style="margin-right: 10px;">
+                <p class="adv">Adventure</p><br>
+                <h3>Genshin Impact</h3>
+                <div class="exp">Explore</div>
+            </div>
+        </div>
+        
+        </div>
+        
+
+    
+    <div class="ttrd">
+        <h2 id="thrdh">Top Categories</h2>
+        <div class="image-container">
+            <img class="theen" src="CC-Update-Part-II_600x360.jpg" alt="" width="350" height="250" style="margin-right: 10px;">
+            
+        </div>
+        <div class="image-container">
+            <img class="theen" src="Forza-Horizon-5-Wallpapers-1.jpg" alt="" width="350" height="250" style="margin-right: 10px;">
+            
+        </div>
+        <div class="image-container">
+            <img class="theen" src="reddead.jpg" alt="" width="350" height="250" style="margin-right: 10px;">
+            
+        </div>
+        <div class="image-container">
+            <img class="theen" src="s.avif" alt="" width="350" height="250" style="margin-right: 10px;">
+            
+        </div>
+    </div>
+    <div><img id="lastpic" src="desktop-wallpaper-call-of-duty-mobile-android-games-ios-games-games-call-of-duty-portrait.jpg" alt="" width="500" height="600"></div>
+                    <div id="fsq">
+                        <h3 id="shp">Go to shop</h3>
+                        <h1 id="pre">Pre-order buy & get best prices for you</h1>
+                        <p id="lo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet delectus minus repellat, repellendus dolores, ducimus cons</p>
+                        <h2 id="shopnow">SHOP NOW</h2>
+                    </div>
+
+                 <div id="scndsq"><h3 id="newsl">NEWS</h3>
+                                  <h1 id="ge">Get upto 100% <br>off on first purchase ! </h1>
+                                  <input type="text" class="in" id="lsbox" placeholder="Your email">
+                                  <div id="lsub"><b>Submit</b></div>
+                 </div>  
+
+                 <div id="lastdiv"><h1 id="ck">&copy; Chandrakanth</h1></div>
+</body>
+</html>
